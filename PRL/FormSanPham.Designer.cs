@@ -101,6 +101,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.MintCream;
             ClientSize = new Size(1368, 786);
             Controls.Add(lb_next);
             Controls.Add(lb_page);

@@ -55,17 +55,16 @@
             label2 = new Label();
             contextMenuStrip1 = new ContextMenuStrip(components);
             grb_ttsanpham = new GroupBox();
+            dataGridView1 = new DataGridView();
             cbb_MaSP = new ComboBox();
             tb_Sl = new TextBox();
             tb_UuDai = new TextBox();
             tb_TenSP = new TextBox();
             tb_GiaBan = new TextBox();
             tb_thanhtien = new TextBox();
-            dataGridView1 = new DataGridView();
             btn_ThemBill = new Button();
             btn_ThemSP = new Button();
             btn_Cancelbill = new Button();
-            btn_XoaSp = new Button();
             grb_tthoadon.SuspendLayout();
             grb_ttsanpham.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -324,6 +323,15 @@
             grb_ttsanpham.TabStop = false;
             grb_ttsanpham.Text = "Thông tin sản phẩm ";
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(16, 33);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(1119, 187);
+            dataGridView1.TabIndex = 0;
+            // 
             // cbb_MaSP
             // 
             cbb_MaSP.FormattingEnabled = true;
@@ -369,15 +377,6 @@
             tb_thanhtien.Size = new Size(383, 27);
             tb_thanhtien.TabIndex = 8;
             // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(16, 33);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1119, 187);
-            dataGridView1.TabIndex = 0;
-            // 
             // btn_ThemBill
             // 
             btn_ThemBill.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
@@ -391,7 +390,7 @@
             // btn_ThemSP
             // 
             btn_ThemSP.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            btn_ThemSP.Location = new Point(728, 389);
+            btn_ThemSP.Location = new Point(796, 389);
             btn_ThemSP.Name = "btn_ThemSP";
             btn_ThemSP.Size = new Size(139, 40);
             btn_ThemSP.TabIndex = 10;
@@ -401,29 +400,18 @@
             // btn_Cancelbill
             // 
             btn_Cancelbill.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            btn_Cancelbill.Location = new Point(868, 389);
+            btn_Cancelbill.Location = new Point(995, 385);
             btn_Cancelbill.Name = "btn_Cancelbill";
             btn_Cancelbill.Size = new Size(116, 40);
             btn_Cancelbill.TabIndex = 11;
             btn_Cancelbill.Text = "CANCEL BILL";
             btn_Cancelbill.UseVisualStyleBackColor = true;
             // 
-            // btn_XoaSp
-            // 
-            btn_XoaSp.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            btn_XoaSp.Location = new Point(990, 389);
-            btn_XoaSp.Name = "btn_XoaSp";
-            btn_XoaSp.Size = new Size(121, 40);
-            btn_XoaSp.TabIndex = 12;
-            btn_XoaSp.Text = "Xóa SP";
-            btn_XoaSp.UseVisualStyleBackColor = true;
-            // 
             // FormHoaDon
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1168, 693);
-            Controls.Add(btn_XoaSp);
             Controls.Add(btn_Cancelbill);
             Controls.Add(btn_ThemSP);
             Controls.Add(btn_ThemBill);
@@ -490,6 +478,5 @@
         private Button btn_ThemBill;
         private Button btn_ThemSP;
         private Button btn_Cancelbill;
-        private Button btn_XoaSp;
     }
 }
