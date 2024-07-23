@@ -39,7 +39,7 @@
             tb_Soluong = new TextBox();
             btn_Them = new Button();
             Btn_Sua = new Button();
-            button3 = new Button();
+            btn_AnSP = new Button();
             tbt_Timkiem = new TextBox();
             dtg_AllSP = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)ptb_Mota).BeginInit();
@@ -152,15 +152,15 @@
             Btn_Sua.Text = "Sửa";
             Btn_Sua.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btn_AnSP
             // 
-            button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button3.Location = new Point(753, 293);
-            button3.Name = "button3";
-            button3.Size = new Size(202, 51);
-            button3.TabIndex = 7;
-            button3.Text = "Xóa";
-            button3.UseVisualStyleBackColor = true;
+            btn_AnSP.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            btn_AnSP.Location = new Point(753, 293);
+            btn_AnSP.Name = "btn_AnSP";
+            btn_AnSP.Size = new Size(202, 51);
+            btn_AnSP.TabIndex = 7;
+            btn_AnSP.Text = "Ẩn SP";
+            btn_AnSP.UseVisualStyleBackColor = true;
             // 
             // tbt_Timkiem
             // 
@@ -188,7 +188,7 @@
             ClientSize = new Size(967, 703);
             Controls.Add(dtg_AllSP);
             Controls.Add(tbt_Timkiem);
-            Controls.Add(button3);
+            Controls.Add(btn_AnSP);
             Controls.Add(Btn_Sua);
             Controls.Add(btn_Them);
             Controls.Add(cbb_Trangthai);
@@ -221,7 +221,7 @@
         private TextBox tb_Soluong;
         private Button btn_Them;
         private Button Btn_Sua;
-        private Button button3;
+        private Button btn_AnSP;
         private TextBox tbt_Timkiem;
         private DataGridView dtg_AllSP;
     }
