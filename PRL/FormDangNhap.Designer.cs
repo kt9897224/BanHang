@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDangNhap));
-            picShow = new PictureBox();
-            picHide = new PictureBox();
             label2 = new Label();
             btnCancel = new Button();
             btnLogin = new Button();
@@ -40,33 +38,13 @@
             pictureBox3 = new PictureBox();
             label1 = new Label();
             pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)picShow).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)picHide).BeginInit();
+            picShow = new PictureBox();
+            cb_show = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picShow).BeginInit();
             SuspendLayout();
-            // 
-            // picShow
-            // 
-            picShow.Image = (Image)resources.GetObject("picShow.Image");
-            picShow.Location = new Point(509, 368);
-            picShow.Name = "picShow";
-            picShow.Size = new Size(17, 14);
-            picShow.SizeMode = PictureBoxSizeMode.StretchImage;
-            picShow.TabIndex = 59;
-            picShow.TabStop = false;
-            picShow.Click += picShow_Click;
-            // 
-            // picHide
-            // 
-            picHide.Image = (Image)resources.GetObject("picHide.Image");
-            picHide.Location = new Point(509, 368);
-            picHide.Name = "picHide";
-            picHide.Size = new Size(17, 14);
-            picHide.SizeMode = PictureBoxSizeMode.StretchImage;
-            picHide.TabIndex = 58;
-            picHide.TabStop = false;
             // 
             // label2
             // 
@@ -155,13 +133,33 @@
             pictureBox1.TabIndex = 49;
             pictureBox1.TabStop = false;
             // 
+            // picShow
+            // 
+            picShow.Image = (Image)resources.GetObject("picShow.Image");
+            picShow.Location = new Point(513, 367);
+            picShow.Name = "picShow";
+            picShow.Size = new Size(23, 14);
+            picShow.SizeMode = PictureBoxSizeMode.StretchImage;
+            picShow.TabIndex = 59;
+            picShow.TabStop = false;
+            // 
+            // cb_show
+            // 
+            cb_show.AutoSize = true;
+            cb_show.Location = new Point(489, 364);
+            cb_show.Name = "cb_show";
+            cb_show.Size = new Size(18, 17);
+            cb_show.TabIndex = 60;
+            cb_show.UseVisualStyleBackColor = true;
+            cb_show.CheckedChanged += checkBox1_CheckedChanged;
+            // 
             // FormDangNhap
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(666, 509);
+            Controls.Add(cb_show);
             Controls.Add(picShow);
-            Controls.Add(picHide);
             Controls.Add(label2);
             Controls.Add(btnCancel);
             Controls.Add(btnLogin);
@@ -173,19 +171,15 @@
             Controls.Add(pictureBox1);
             Name = "FormDangNhap";
             Text = "FormDangNhap";
-            ((System.ComponentModel.ISupportInitialize)picShow).EndInit();
-            ((System.ComponentModel.ISupportInitialize)picHide).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picShow).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private PictureBox picShow;
-        private PictureBox picHide;
         private Label label2;
         private Button btnCancel;
         private Button btnLogin;
@@ -195,5 +189,7 @@
         private PictureBox pictureBox3;
         private Label label1;
         private PictureBox pictureBox1;
+        private PictureBox picShow;
+        private CheckBox cb_show;
     }
 }

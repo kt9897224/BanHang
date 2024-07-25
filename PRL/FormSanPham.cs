@@ -76,7 +76,20 @@ namespace PRL
 
         public void BtnMua_MouseClick(object sender, MouseEventArgs e)
         {
-
+            Button b = (Button)sender;
+            Panel p = (Panel)b .Parent;
+            TextBox t = p.Controls["tbSoluong"] as TextBox;
+            int soluongmua = Convert.ToInt32(t.Text);
+            Label soluong = p.Controls["Soluong"] as Label;
+            int soluongcon = Convert.ToInt32(soluong.Text);
+            if (soluongmua > soluongcon)
+            {
+                MessageBox.Show($"Không thể mua {soluongmua}  vì quá {soluongcon} số lượng");
+            }
+            else
+            {
+                MessageBox.Show("Bạn vừa chọn mua sản phẩm có id là " + p.Name + "Với số lượng là: " + t.Text);
+            }
         }
 
 

@@ -17,8 +17,23 @@ namespace PRL
             InitializeComponent();
         }
 
-        private void picShow_Click(object sender, EventArgs e)
+        private void picShow_CheckedChanged(object sender, EventArgs e)
         {
+
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cb_show.Checked)
+            {
+                txtPass.PasswordChar = '\0';
+
+            }
+            else
+            {
+                txtPass.PasswordChar = '*';
+            }
 
         }
     }
