@@ -56,6 +56,7 @@
             picShow.SizeMode = PictureBoxSizeMode.StretchImage;
             picShow.TabIndex = 59;
             picShow.TabStop = false;
+            picShow.Click += picShow_Click;
             // 
             // picHide
             // 

@@ -16,5 +16,10 @@ namespace PRL
         {
             InitializeComponent();
         }
+
+        private void picShow_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

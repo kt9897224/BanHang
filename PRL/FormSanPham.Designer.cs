@@ -34,6 +34,17 @@
             lb_back = new Label();
             lb_page = new Label();
             lb_next = new Label();
+            groupBox1 = new GroupBox();
+            btn_SuaHD = new Button();
+            btn_themHD = new Button();
+            dataGridView1 = new DataGridView();
+            groupBox2 = new GroupBox();
+            btn_thanhtoan = new Button();
+            dataGridView2 = new DataGridView();
+            groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
             // 
             // btn_ShowSP
@@ -45,6 +56,7 @@
             btn_ShowSP.TabIndex = 0;
             btn_ShowSP.Text = "Hiển thị SP";
             btn_ShowSP.UseVisualStyleBackColor = true;
+            btn_ShowSP.Click += btn_ShowSP_Click;
             // 
             // btn_QLSP
             // 
@@ -97,12 +109,85 @@
             lb_next.TabIndex = 2;
             lb_next.Text = ">>>";
             // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(btn_SuaHD);
+            groupBox1.Controls.Add(btn_themHD);
+            groupBox1.Controls.Add(dataGridView1);
+            groupBox1.Location = new Point(1341, 18);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(527, 340);
+            groupBox1.TabIndex = 3;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Hóa đơn";
+            // 
+            // btn_SuaHD
+            // 
+            btn_SuaHD.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            btn_SuaHD.Location = new Point(390, 35);
+            btn_SuaHD.Name = "btn_SuaHD";
+            btn_SuaHD.Size = new Size(94, 29);
+            btn_SuaHD.TabIndex = 2;
+            btn_SuaHD.Text = "Sửa HĐ";
+            btn_SuaHD.UseVisualStyleBackColor = true;
+            // 
+            // btn_themHD
+            // 
+            btn_themHD.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            btn_themHD.Location = new Point(13, 35);
+            btn_themHD.Name = "btn_themHD";
+            btn_themHD.Size = new Size(94, 29);
+            btn_themHD.TabIndex = 1;
+            btn_themHD.Text = "Thêm HĐ";
+            btn_themHD.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(13, 75);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(508, 259);
+            dataGridView1.TabIndex = 0;
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(btn_thanhtoan);
+            groupBox2.Controls.Add(dataGridView2);
+            groupBox2.Location = new Point(1339, 392);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(529, 345);
+            groupBox2.TabIndex = 4;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Sản phẩm trong hóa đơn ";
+            // 
+            // btn_thanhtoan
+            // 
+            btn_thanhtoan.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            btn_thanhtoan.Location = new Point(209, 301);
+            btn_thanhtoan.Name = "btn_thanhtoan";
+            btn_thanhtoan.Size = new Size(149, 29);
+            btn_thanhtoan.TabIndex = 3;
+            btn_thanhtoan.Text = "Thanh Toán ";
+            btn_thanhtoan.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView2
+            // 
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Location = new Point(16, 41);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.RowHeadersWidth = 51;
+            dataGridView2.Size = new Size(507, 244);
+            dataGridView2.TabIndex = 0;
+            // 
             // FormSanPham
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MintCream;
-            ClientSize = new Size(1368, 786);
+            ClientSize = new Size(1880, 786);
+            Controls.Add(groupBox2);
+            Controls.Add(groupBox1);
             Controls.Add(lb_next);
             Controls.Add(lb_page);
             Controls.Add(lb_back);
@@ -112,6 +197,10 @@
             Name = "FormSanPham";
             Text = "FormSanPham";
             Load += FormSanPham_Load;
+            groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -124,5 +213,12 @@
         private Label lb_back;
         private Label lb_page;
         private Label lb_next;
+        private GroupBox groupBox1;
+        private GroupBox groupBox2;
+        private Button btn_SuaHD;
+        private Button btn_themHD;
+        private DataGridView dataGridView1;
+        private DataGridView dataGridView2;
+        private Button btn_thanhtoan;
     }
 }
